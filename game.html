@@ -464,25 +464,25 @@
             kesehatan.value = statsKesehatan
             ekonomi.value = statsEkonomi
 
-            if (statsPendidikan == 0) {
+            if (statsPendidikan <= 0) {
                 swal("Maaf, coba lagi", "Kamu tidak memperhitungkan bagian pendidikan. Halaman ini akan kerefresh dan kamu harus mengulang dari awal :D", "error")
                     .then(() => {
                         location.reload();
                     });
 
-            } else if (statsSosial == 0) {
+            } else if (statsSosial <= 0) {
                 swal("Maaf, coba lagi", "Kamu tidak memperhitungkan bagian sosial. Halaman ini akan kerefresh dan kamu harus mengulang dari awal :D", "error")
                     .then(() => {
                         location.reload();
                     });
 
-            } else if (statsKesehatan == 0) {
+            } else if (statsKesehatan <= 0) {
                 swal("Maaf, coba lagi", "Kamu tidak memperhitungkan bagian kesehatan. Halaman ini akan kerefresh dan kamu harus mengulang dari awal :D", "error")
                     .then(() => {
                         location.reload();
                     });
 
-            } else if (statsEkonomi == 0) {
+            } else if (statsEkonomi <= 0) {
                 swal("Maaf, coba lagi", "Kamu tidak memperhitungkan bagian ekonomi. Halaman ini akan kerefresh dan kamu harus mengulang dari awal :D", "error")
                     .then(() => {
                         location.reload();

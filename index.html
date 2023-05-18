@@ -95,13 +95,23 @@
                     31 HARI SEBELUM WISUDA
                 </div>
                 <div class="divider20"></div>
-                <button class="button asap-condensed">TUTORIAL</button>
+                <button class="button asap-condensed" onclick="tutorial()">TUTORIAL</button>
                 <div class="divider5"></div>
                 <button class="button green asap-condensed" onclick="play()">PLAY NOW</button>
                 <div class="divider100"></div>
             </center>
         </div>
     </div>
+
+    <script>
+        function play() {
+            window.location.href = "opening.html";
+        }
+
+        function tutorial() {
+            swal("Maafkan Developer ini", "Tutorial untuk game belum dibuat, dan akan dibuat apabila sudah mendekati jadwal perilisan (12 Juni 2023)", "warning")
+        }
+    </script>
 
 </body>
 
