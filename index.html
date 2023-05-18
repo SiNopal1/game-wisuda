@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika&family=Archivo+Black&family=Asap+Condensed&family=IBM+Plex+Mono&family=IBM+Plex+Sans+Devanagari:wght@700&family=Open+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+        }
+
+        .archivo {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 40px;
+            line-height: 1.1;
+            color: white;
+        }
+
+        .andika {
+            font-family: 'andika', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: white;
+        }
+
+        .asap-condensed {
+            font-family: 'Asap Condensed', sans-serif;
+            font-size: 20px;
+            color: black;
+        }
+
+        .divider5 {
+            margin-top: 5px;
+        }
+
+        .divider10 {
+            margin-top: 10px;
+        }
+
+        .divider20 {
+            margin-top: 20px;
+        }
+
+        .divider30 {
+            margin-top: 30px;
+        }
+
+        .divider50 {
+            margin-top: 50px;
+        }
+
+        .divider100 {
+            margin-top: 100px;
+        }
+
+        .button {
+            padding: 15px 50px;
+            border-radius: 20px;
+        }
+
+        .green {
+            background-color: #7CBD1E;
+        }
+
+        .wrapper {
+            position: relative;
+            height: 100vh;
+            /* Set the height of the wrapper to full viewport height */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <center>
+                <div class="andika">
+                    Dirilis saat H-1 Wisuda
+                </div>
+                <div class="archivo">
+                    31 HARI SEBELUM WISUDA
+                </div>
+                <div class="divider20"></div>
+                <button class="button asap-condensed">TUTORIAL</button>
+                <div class="divider5"></div>
+                <button class="button green asap-condensed" onclick="play()">PLAY NOW</button>
+                <div class="divider100"></div>
+            </center>
+        </div>
+    </div>
+
+</body>
+
+</html>
