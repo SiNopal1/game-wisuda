@@ -1,4 +1,4 @@
-18 Mei 2023
+# 18 Mei 2023
 
 Hari ini, saat kita mengucapkan selamat tinggal kepada masa-masa indah di sekolah menengah, aku merasa campur aduk dengan perasaan bahagia dan sedih. Kita telah melewati begitu banyak hal bersama, dari saat pertama kali bertemu di kelas hingga menghadapi tantangan dan kegembiraan bersama-sama. Kita telah menjadi sahabat yang tak tergantikan, dan akan selalu mengingat momen-momen yang telah kita bagikan.
 
