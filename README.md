@@ -1,4 +1,5 @@
-# Pesanku
+18 Mei 2023
+
 Hari ini, saat kita mengucapkan selamat tinggal kepada masa-masa indah di sekolah menengah, aku merasa campur aduk dengan perasaan bahagia dan sedih. Kita telah melewati begitu banyak hal bersama, dari saat pertama kali bertemu di kelas hingga menghadapi tantangan dan kegembiraan bersama-sama. Kita telah menjadi sahabat yang tak tergantikan, dan akan selalu mengingat momen-momen yang telah kita bagikan.
 
 Sekolah adalah tempat di mana kita tumbuh dan belajar bersama. Bersama-sama, kita menghadapi pelajaran yang menantang, ujian yang menegangkan, dan berbagai kegiatan ekstrakurikuler yang menyenangkan. Namun, lebih dari itu, kita juga telah belajar tentang kehidupan dan pentingnya memiliki teman sejati. Kamu semua telah memberikan dukungan, kepercayaan, dan canda tawa yang tak terlupakan. Aku merasa terhormat telah berbagi perjalanan sekolah ini dengan kalian semua.
