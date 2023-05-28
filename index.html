@@ -36,6 +36,12 @@
             color: black;
         }
 
+        .ibmmono {
+            color: white;
+            font-family: 'IBM Plex Mono', sans-serif;
+            font-size: 16px;
+        }
+
         .divider5 {
             margin-top: 5px;
         }
@@ -85,25 +91,56 @@
 </head>
 
 <body>
+    <div id="lyrics"></div>
     <div class="wrapper">
         <div class="content">
             <center>
+                <audio id="audio" loop>
+                    <source src="aset/music/opening.mp3" type="audio/mpeg" />
+                </audio>
+                <div class="divider20"></div>
+
+                <img src="aset/music/pause.png" onClick="music()" id="gambar" />
+
                 <div class="andika">
                     Dirilis saat H-1 Wisuda
                 </div>
                 <div class="archivo">
-                    31 HARI SEBELUM WISUDA
+                    365 HARI SEBELUM WISUDA
                 </div>
                 <div class="divider20"></div>
                 <button class="button asap-condensed" onclick="tutorial()">TUTORIAL</button>
                 <div class="divider5"></div>
                 <button class="button green asap-condensed" onclick="play()">PLAY NOW</button>
+                <div class="divider5"></div>
+                <div id="lirik" class="ibmmono">(lirik lagu muncul disini)</div>
                 <div class="divider100"></div>
             </center>
         </div>
     </div>
 
+
     <script>
+        isPause = true
+        const gambar = document.getElementById('gambar')
+        const audio = document.getElementById('audio')
+        const lirik = document.getElementById('lirik')
+
+        function music() {
+            if (isPause) {
+                audio.play();
+                gambar.src = "aset/music/play.png"
+                isPause = false
+            } else {
+                audio.pause();
+                gambar.src = "aset/music/pause.png"
+                isPause = true
+            }
+
+
+            return false;
+        }
+
         function play() {
             window.location.href = "opening.html";
         }
@@ -111,6 +148,27 @@
         function tutorial() {
             swal("Maafkan Developer ini", "Tutorial untuk game belum dibuat, dan akan dibuat apabila sudah mendekati jadwal perilisan (12 Juni 2023)", "warning")
         }
+
+        setInterval(function () {
+            adjuster = 3.9
+            duration = audio.currentTime
+            if (duration >= 62.5 - adjuster) { lirik.innerHTML = 'semboyan bangsa indonesia' }
+            else if (duration >= 61 - adjuster) { lirik.innerHTML = 'bhinneka tunggal ika' }
+            else if (duration >= 59 - adjuster) { lirik.innerHTML = 'falsafah pancasila' }
+            else if (duration >= 55 - adjuster) { lirik.innerHTML = 'ayo-ayo tegakkan' }
+            else if (duration >= 53 - adjuster) { lirik.innerHTML = 'berkarya nan bermoral' }
+            else if (duration >= 51.5 - adjuster) { lirik.innerHTML = 'moto ikhlas beramal' }
+            else if (duration >= 47.5 - adjuster) { lirik.innerHTML = 'demi cita-cita' }
+            else if (duration >= 44.5 - adjuster) { lirik.innerHTML = 'bermartabat mulia' }
+            else if (duration >= 43 - adjuster) { lirik.innerHTML = 'membangun bangsa' }
+            else if (duration >= 39 - adjuster) { lirik.innerHTML = 'bahu membahu turut berjuang' }
+            else if (duration >= 35.7 - adjuster) { lirik.innerHTML = 'ra mi mts ma' }
+            else if (duration >= 31.5 - adjuster) { lirik.innerHTML = 'santun berwibawa' }
+            else if (duration >= 28.5 - adjuster) { lirik.innerHTML = 'mencerdaskan tunas bangsa' }
+            else if (duration >= 27 - adjuster) { lirik.innerHTML = 'pengemban amanat' }
+            else if (duration >= 23 - adjuster) { lirik.innerHTML = 'dipersada bumi nusantara' }
+            else if (duration >= 19.5 - adjuster) { lirik.innerHTML = 'gema madrasah membahana' }
+        }, 100);
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
