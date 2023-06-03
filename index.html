@@ -25,7 +25,7 @@
 
         .andika {
             font-family: 'andika', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.5;
             color: white;
         }
@@ -102,18 +102,18 @@
 
                 <img src="aset/music/pause.png" onClick="music()" id="gambar" />
 
-                <div class="andika">
-                    Dirilis saat H-1 Wisuda
+                <div class="andika" id="lirik">
+                    (Dirilis tanggal 12 Juni 2023)
                 </div>
                 <div class="archivo">
-                    365 HARI SEBELUM WISUDA
+                    MADRASAH ADVENTURE
                 </div>
                 <div class="divider20"></div>
                 <button class="button asap-condensed" onclick="tutorial()">TUTORIAL</button>
                 <div class="divider5"></div>
                 <button class="button green asap-condensed" onclick="play()">PLAY NOW</button>
-                <div class="divider5"></div>
-                <div id="lirik" class="ibmmono">(lirik lagu muncul disini)</div>
+                <!-- <div class="divider5"></div> -->
+                <!-- <div id="lirik" class="ibmmono">(lirik lagu muncul disini)</div> -->
                 <div class="divider100"></div>
             </center>
         </div>
@@ -142,7 +142,7 @@
         }
 
         function play() {
-            window.location.href = "opening.html";
+            window.location.href = "transisi-game/transisi-juli-21133119.html";
         }
 
         function tutorial() {
@@ -164,10 +164,11 @@
             else if (duration >= 39 - adjuster) { lirik.innerHTML = 'bahu membahu turut berjuang' }
             else if (duration >= 35.7 - adjuster) { lirik.innerHTML = 'ra mi mts ma' }
             else if (duration >= 31.5 - adjuster) { lirik.innerHTML = 'santun berwibawa' }
-            else if (duration >= 28.5 - adjuster) { lirik.innerHTML = 'mencerdaskan tunas bangsa' }
+            else if (duration >= 29 - adjuster) { lirik.innerHTML = 'mencerdaskan tunas bangsa' }
             else if (duration >= 27 - adjuster) { lirik.innerHTML = 'pengemban amanat' }
             else if (duration >= 23 - adjuster) { lirik.innerHTML = 'dipersada bumi nusantara' }
             else if (duration >= 19.5 - adjuster) { lirik.innerHTML = 'gema madrasah membahana' }
+            else { lirik.innerHTML = '(Dirilis tanggal 12 Juni 2023)' }
         }, 100);
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
