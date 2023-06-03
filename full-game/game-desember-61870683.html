@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On!</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika&family=Archivo+Black&family=Asap+Condensed&family=IBM+Plex+Mono&family=IBM+Plex+Sans+Devanagari:wght@700&family=Open+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* GENERAL */
+
+        body {
+            background-color: #000;
+            padding: 2rem;
+        }
+
+        /* FONTS */
+
+        .ibmmono {
+            font-family: 'IBM Plex Mono', sans-serif;
+            line-height: 1.5;
+            font-size: 16px;
+            color: black;
+            text-align: justify;
+        }
+
+        .devanagari {
+            font-family: 'IBM Plex Sans Devanagari', sans-serif;
+            line-height: 1;
+            font-size: 20px;
+            color: black;
+            text-align: justify;
+        }
+
+        .ibmmonobold {
+            font-family: 'IBM Plex Mono', sans-serif;
+            line-height: 1.5;
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .ibmmonoboldblack {
+            font-family: 'Andika', sans-serif;
+            line-height: 1.5;
+            font-size: 24px;
+            font-weight: 700;
+            color: black;
+        }
+
+        .ibmsans {
+            font-family: 'IBM Plex Sans', sans-serif;
+            line-height: 1.5;
+            font-weight: 600;
+            font-size: 24px;
+            color: white;
+        }
+
+        /* GAP */
+
+        .divider5 {
+            margin-top: 5px;
+        }
+
+        .divider10 {
+            margin-top: 10px;
+        }
+
+        .divider20 {
+            margin-top: 20px;
+        }
+
+        .divider30 {
+            margin-top: 30px;
+        }
+
+        .divider50 {
+            margin-top: 50px;
+        }
+
+        .divider100 {
+            margin-top: 100px;
+        }
+
+        /* PROPERTY */
+
+        .button {
+            padding: 10px 100px;
+            border-radius: 20px;
+        }
+
+        .green {
+            background-color: #7CBD1E;
+        }
+
+        .white {
+            background-color: #fff;
+        }
+
+        .progressing {
+            width: 75%;
+            height: 10px;
+            appearance: none;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+
+
+
+        .progressing::-webkit-progress-bar {
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        .progressing::-webkit-progress-value {
+            background-color: black;
+            transition: width 0.5s ease-in-out;
+            border-radius: 5px;
+        }
+
+        .progressing::-moz-progress-bar {
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        .progressing[value]::-webkit-progress-value {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .padding {
+            padding: 1rem;
+        }
+
+        .container {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        .container2 {
+            width: 68px;
+            height: 68px;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        .container3 {
+            width: 223.5px;
+            height: 68px;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        .black {
+            color: #000
+        }
+
+        .padding2 {
+            padding-left: 40%;
+            padding-top: 20%;
+        }
+
+        .padding3 {
+            /* text-align: center; */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0.75rem;
+        }
+
+        .container4 {
+            width: 223.5px;
+            height: 68px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="../aset/stats/pendidikan.png" alt="" srcset="" width="30">
+        <progress max="6" value="3" id="pendidikan" class="progressing"></progress>
+        <img src="../aset/size/none.png" alt="" srcset="" width="30" id="efek-pendidikan">
+        <div class="divider5"></div>
+
+        <img src="../aset/stats/sosial.png" alt="" srcset="" width="30">
+        <progress max="6" value="3" id="sosial" class="progressing"></progress>
+        <img src="../aset/size/none.png" alt="" srcset="" width="30" id="efek-sosial">
+        <div class="divider5"></div>
+
+        <img src="../aset/stats/kesehatan.png" alt="" srcset="" width="30">
+        <progress max="6" value="3" id="kesehatan" class="progressing"></progress>
+        <img src="../aset/size/none.png" alt="" srcset="" width="30" id="efek-kesehatan">
+        <div class="divider5"></div>
+
+        <img src="../aset/stats/ekonomi.png" alt="" srcset="" width="30">
+        <progress max="6" value="3" id="ekonomi" class="progressing"></progress>
+        <img src="../aset/size/none.png" alt="" srcset="" width="30" id="efek-ekonomi">
+    </div>
+
+    <center>
+        <div class="divider30"></div>
+        <div class="ibmmonobold">
+            Event <span id="day"></span> of <span id="amountDay"></span>
+        </div>
+        <div class="divider5"></div>
+        <div class="ibmmono white container">
+            <div class="padding" id="pertanyaan"></div>
+        </div>
+    </center>
+
+    <div class="divider10"></div>
+    <div class="ibmmonobold green container2" id="hint1" style="display: inline-block;" onclick="hint1()">
+        <div class="padding2">
+            <div class="black">?</div>
+        </div>
+    </div>
+    <div class="ibmmono white container3" id="option1" style="display: inline-block;" onclick="option1()">
+        <div class="padding3">
+            <div class="black" id="pilihan1"></div>
+        </div>
+    </div>
+    <div class="divider5"></div>
+    <div class="ibmmonobold green container2" id="hint2" style="display: inline-block;" onclick="hint2()">
+        <div class="padding2">
+            <div class="black">?</div>
+        </div>
+    </div>
+    <div class="ibmmono white container3" id="option2" style="display: inline-block;" onclick="option2()">
+        <div class="padding3">
+            <div class="black" id="pilihan2"></div>
+        </div>
+    </div>
+
+    <div class="divider30"></div>
+    <center>
+        <div class="container4" style="display: inline-block;">
+            <div class="ibmmonoboldblack padding3">
+                Desember 2022
+            </div>
+        </div>
+    </center>
+
+    <script src="../script/database-desember.js"></script>
+    <script>
+        const pindahLokasi = "../transisi-game/transisi-januari-91301358.html"
+    </script>
+    <script src="../script/game.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
