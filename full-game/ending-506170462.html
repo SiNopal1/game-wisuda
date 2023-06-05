@@ -1,53 +1,267 @@
 <!DOCTYPE html>
-<html>
-<head>
-<style>
-  body {
-    background: black;
-  }
-  .star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    background: white;
-    animation: twinkle 2s infinite;
-  }
-  @keyframes twinkle {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.5);
-      opacity: 0.5;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-</style>
-</head>
-<body>
-<div class="star"></div>
+<html lang="en">
 
-<script>
-  const star = document.querySelector('.star');
+<head>
+  <title>It finally Ends</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;600&display=swap" rel="stylesheet">
+  <link href="quote.css" rel="stylesheet">
+  <style>
+    @keyframes backgrounding {
+      50% {
+        background-color: white;
+      }
+
+      51% {
+        background-color: black;
+      }
+
+      100% {
+        background-color: black;
+      }
+    }
+
+    @keyframes scroll {
+      0% {
+        margin-top: 0px;
+      }
+
+      100% {
+        margin-top: -7000px;
+      }
+    }
+
+    body {
+      background-color: #fff;
+      overflow: hidden;
+      /* animation: backgrounding 90s linear; */ 
+    }
+
+    #end-credit {
+      color: black;
+      text-align: center;
+      font-size: 40px;
+      height: 100vh;
+      text-align: center;
+      font-family: "Geologica", sans-serif;
+      font-weight: 300;
+      /* animation: scroll 90s linear; */
+    }
+
+    .bold {
+      font-weight: 600;
+    }
+
+    .large-gap {
+      padding-top: 925px;
+    }
+
+    .medium-gap {
+      padding-top: 500px;
+    }
+
+    .credit {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      color: black;
+    }
+
+    .gap {
+      margin-top: 80px;
+    }
+
+    .small-gap {
+      margin-top: 20px;
+    }
+
+    .poem-gap {
+      margin-top: 50px;
+    }
+
+    .poem-gap-break {
+      margin-top: 200px;
+    }
+
+    .z-index {
+      z-index: 999;
+      font-family: "Geologica";
+      font-weight: 300;
+    }
+
+    .white {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <audio id="audio">
+    <source src="../aset/music/ending.mp3" type="audio/mpeg">
+  </audio>
   
-  function randomPosition() {
-    star.style.top = Math.random() * window.innerHeight + 'px';
-    star.style.left = Math.random() * window.innerWidth + 'px';
-  }
-  
-  setInterval(randomPosition, 2000);
-</script>
-<script type="text/javascript">
-    (function (c, l, a, r, i, t, y) {
-        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "he1ppae7p7");
-</script>
+  <div id="end-credit">
+    <div class="large-gap"></div>
+    <img src="../aset/music/pause1.png" alt="" width="160" onclick="music()" id="gambar">
+    <div class="large-gap"></div>
+    <!-- <div class="gap"></div> -->
+    <div class="bold">Developer:</div> Naufal Aufa Rahatta
+    <div class="credit">
+      <img src="https://i.pinimg.com/originals/da/b8/4e/dab84e5ae5a049d075fcd49ee11bc39a.png" alt="" width="50">
+      &nbsp;<span id="special"><a href="#">@secondnaufal</a></span>
+    </div>
+    <div class="credit">
+      <img src="https://tromso.maps.arcgis.com/sharing/files/github_btn.png" alt="" width="50">&nbsp;<a
+        href="#">@SiNopal1</a></span>
+    </div>
+    <div class="gap"></div>
+    <div class="bold">Tester:</div>
+    1. Salwa Achmad Maulana Hafiidz <br>
+    <div class="credit">
+      <img src="https://i.pinimg.com/originals/da/b8/4e/dab84e5ae5a049d075fcd49ee11bc39a.png" alt="" width="50">
+      &nbsp;<span id="special"><a href="#">@hafiidz65</a></span>
+    </div>
+    <div class="small-gap"></div>
+    2. Azalia Firmansyah <br>
+    <div class="credit">
+      <img src="https://i.pinimg.com/originals/da/b8/4e/dab84e5ae5a049d075fcd49ee11bc39a.png" alt="" width="50">
+      &nbsp;<span id="special"><a href="#">@doublea.za</a></span>
+    </div>
+    <div class="small-gap"></div>
+    3. Najwa Nur Azizah <br>
+    <div class="credit">
+      <img src="https://i.pinimg.com/originals/da/b8/4e/dab84e5ae5a049d075fcd49ee11bc39a.png" alt="" width="50">
+      &nbsp;<span id="special"><a href="#">@fhrwawawu</a></span>
+    </div>
+    <div class="gap"></div>
+    <div class="bold">Terimakasih:</div>
+    1. Ahmad Dzakwan Husein <br>
+    2. Aisha Adyatma Asnawiyanto <br>
+    3. Akasyah Alwa Maulidiyah <br>
+    4. Alfurqonee Maharani Rezky Adynur <br>
+    5. Aqilla Malliq Junian Yusuf <br>
+    6. Ardina Nur Muliaasri <br>
+    7. Aurelia Azzarah <br>
+    8. Azkiya Alta Funnisa <br>
+    9. Bagas Rizki Putra Wiastama <br>
+    10. Choirun Nisa' <br>
+    11. Citra Aimmatul Zalwa <br>
+    12. Fadhilah Annisa Nursagita <br>
+    13. Fajar Ardi Santoso <br>
+    14. Hushain Abidin Fillah <br>
+    15. Isma Aulia Wulandari <br>
+    16. Ketrina Ayu Larasati <br>
+    17. Lintang Farah Aulia <br>
+    18. Muhammad Akmal Danadyaksa <br>
+    19. Muhammad Farrel Rahadiansyah <br>
+    20. Muhammad Gheysar Abyan <br>
+    21. Muhammad revandy <br>
+    22. Muhammad Ruly Hasbil Aziz <br>
+    23. Mukhammad Imam Syafii <br>
+    24. Nabilla Imania Dewantari <br>
+    25. Nada Aulia Rahmah <br>
+    26. Nadin Rosanda <br>
+    27. Naufal Aufa Rahatta <br>
+    28. Nuraini Halimatus Sya'diya <br>
+    29. Putri Ayu Zahratussita Fitriani <br>
+    30. Raffael Alfarezky Pratama Sahputra <br>
+    31. Reivan Kamal Ar Rasyid <br>
+    32. Rohmatul Hikmah Maulidia <br>
+    33. Salsabila Faridha Yumna <br>
+    34. Salwa Achmad Maulana Hafiidz <br>
+    35. Syenda Aulia Permadani
+    <div class="medium-gap"></div>
+    <i class="white">
+      <!-- <div class="poem-gap"></div> -->
+      kini tiba saatnya kita berpisah
+
+      <div class="poem-gap"></div>
+      usai bersama tiga tahun
+      <div class="poem-gap"></div>
+      banyak kenangan terukir dalam hati
+      <div class="poem-gap"></div>
+      tak terlupakan sepanjang masa
+
+      <div class="poem-gap-break"></div>
+
+      kita belajar bersama
+      <div class="poem-gap"></div>
+      menghadapi ujian dan pelajaran
+      <div class="poem-gap"></div>
+      tak jarang kita saling membantu
+      <div class="poem-gap"></div>
+      saling menguatkan dan menghibur
+
+      <div class="poem-gap-break"></div>
+
+      kini saatnya kita berpisah
+      <div class="poem-gap"></div>
+      melangkah ke jenjang lebih tinggi
+      <div class="poem-gap"></div>
+      meninggalkan bunga-bunga masa lalu
+      <div class="poem-gap"></div>
+      dan siap hadapi masa depan
+
+      <div class="poem-gap-break"></div>
+
+      terima kasih teman-teman dan guru-guru
+      <div class="poem-gap"></div>
+      atas segala bimbingan dan dukungan
+      <div class="poem-gap"></div>
+      kita 'kan slalu mengenang masa-masa ini
+      <div class="poem-gap"></div>
+      menjadikannya bekal masa depan
+
+      <div class="poem-gap-break"></div>
+
+      selamat tinggal sekolahku tercinta
+      <div class="poem-gap"></div>
+      sampai jumpa lagi teman-temanku terbaik
+      <div class="poem-gap"></div>
+      semoga kita sukses di masa depan
+      <div class="poem-gap"></div>
+      dan tak pernah lupakan masa lalu
+    </i>
+    <div class="gap"></div>
+    <blockquote class="otro-blockquote">
+      <span class="z-index">Anything can be a sword if you polish it enough.</span>
+      <b>- Nagisa Shiota</b>
+    </blockquote>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="credit white">
+      Maaf gamenya nggak bagus, masih pemula🙏
+    </div>
+    <div class="large-gap"></div>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    const div = document.getElementById("end-credit");
+    const audio = document.getElementById("audio")
+    const gambar = document.getElementById("gambar")
+    function music() {
+      audio.play();
+      gambar.src = "../aset/music/play1.png"
+      document.querySelector('#end-credit').style.animation = 'scroll 92s linear';
+      document.querySelector('body').style.animation = 'backgrounding 92s linear';
+    }
+
+    // Define a function to be executed after 90 seconds
+    function delayedFunction() {
+      isKill = localStorage.getItem("catKill")
+      if(isKill == 'true'){
+        window.location.href = "secret-ending.html";
+      }
+    }
+
+    // Set a timer to call the function after 90 seconds (90000 milliseconds)
+    setTimeout(delayedFunction, 90000);
+  </script>
 </body>
+
 </html>
