@@ -114,7 +114,7 @@ const opt = [
     {
       "nomor": 9,
       "soal": "Sholat Jum’at di madrasah adalah kondisi dimana anda harus memasang strategi untuk mendapatkan nasi bungkus",
-      "pilihan1": "Aku piilh saf depan",
+      "pilihan1": "Aku pilih saf depan",
       "pendidikan1": 1,
       "sosial1": 0,
       "kesehatan1": 0,

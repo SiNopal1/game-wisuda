@@ -119,7 +119,7 @@ const opt = [
       "sosial1": 0,
       "kesehatan1": 0,
       "ekonomi1": 0,
-      "pilihan2": "Hello, my name is {name}",
+      "pilihan2": "Hello, my name is " + siswa[localStorage.getItem("absen")-1]["siswa"],
       "pendidikan2": -1,
       "sosial2": 1,
       "kesehatan2": 1,
