@@ -43,7 +43,7 @@ const opt = [
     },
     {
       "nomor": 4,
-      "soal": "Hasil dari 16 : 2 sama dengan 8, 8 + 5 sama dengan 13, 13 + (" + (localStorage.getItem("absen") - 13) + ") = " + localStorage.getItem("absen") + ". Yang namanya " + siswa[localStorage.getItem("absen")]["siswa"] + ", maju! Coba kerjakan soal ini: Dua buah muatan listrik memiliki besar yang sama yaitu 6 μC. Jika gaya coulomb yang terjadi antara dua muatan tadi adalah 1,6 N, tentukan jarak pisah kedua muatan tersebut!",
+      "soal": "Hasil dari 16 : 2 sama dengan 8, 8 + 5 sama dengan 13, 13 + (" + (localStorage.getItem("absen") - 13) + ") = " + localStorage.getItem("absen") + ". Yang namanya " + siswa[localStorage.getItem("absen")-1]["siswa"] + ", maju! Coba kerjakan soal ini: Dua buah muatan listrik memiliki besar yang sama yaitu 6 μC. Jika gaya coulomb yang terjadi antara dua muatan tadi adalah 1,6 N, tentukan jarak pisah kedua muatan tersebut!",
       "pilihan1": "45cm",
       "pendidikan1": 1,
       "sosial1": 0,
